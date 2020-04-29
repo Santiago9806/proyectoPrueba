@@ -1,0 +1,59 @@
+<script src="../js/controles.js"></script> 
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="agregarTarea.html">Tareas</a></li>
+    <li><a href="contactenos.html">Contactenos</a></li>
+</ul>
+<img class="img1" src="../img/fondoTarea.jpg" alt="Nature" class="responsive">
+<center>
+    <div class="contenedorTarea">
+        <table class='table table-striped'>
+            <tr>
+                <td colspan="2" style="text-align: center; font-size: 50px;">
+                    Tareas
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nombre tarea: 
+                </td>
+                <td>
+                    <input type="text" id="tarea" name="tarea">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Descripcion tarea: 
+                </td>
+                <td>
+                    <textarea id="descTarea" name="descTarea"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fecha tarea : 
+                </td>
+                <td>
+                    <input type="date" id="fechaTarea" name="fechaTarea">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center><button class="btn btn-success" type="button" id="btnGuardar" name="btnGuardar" onclick="guardarTarea()">Guardar</button></center>
+                </td>
+            </tr>
+        </table>
+        <div id="divGuardado" class="alert alert-success" role="alert" style="display: none;">La tarea se guardo correctamente!</div>
+        <div id="divError" class="alert alert-danger" role="alert" style="display: none;">Error al guardar la tarea!</div>
+    </div>
+</center>
